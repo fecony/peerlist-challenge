@@ -7,7 +7,7 @@
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc",
-    "deploy": "bun run build && surge ./build/ peerlist-fecony-ui.surge.sh"
+    "deploy": "bun run build && surge ./build/client/ peerlist-fecony-ui.surge.sh"
   },
   "dependencies": {
     "@react-router/node": "^7.5.0",
