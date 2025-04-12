@@ -1,5 +1,6 @@
 export const GitHub = () => (
   <a
+    target="_blank"
     href="http://github.com/fecony/peerlist-challenge"
     aria-label="github repository"
     className="w-5 flex justify-center items-center text-lg"
