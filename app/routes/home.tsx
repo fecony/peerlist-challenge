@@ -33,7 +33,7 @@ export default function Home() {
         <ExternalLink size={16} />
       </a>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
+      <div className="flex justify-center flex-wrap gap-6 w-full max-w-md">
         {days.map((day) => (
           <Link
             key={day.path}
