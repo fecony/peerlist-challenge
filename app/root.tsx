@@ -12,9 +12,31 @@ import "./app.css";
 import { GitHub } from "~/components/github";
 import { BackHomeButton } from "~/components/back-home-button";
 
+export const meta = ({}: Route.MetaArgs) => [
+  {
+    name: "apple-mobile-web-app-title",
+    content: "Fecony UI Animation Challenge",
+  },
+];
+
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.bunny.net" },
   { rel: "stylesheet", href: "https://fonts.bunny.net/css" },
+
+  {
+    rel: "icon",
+    type: "image/png",
+    href: "/favicon-96x96.png",
+    sizes: "96x96",
+  },
+  { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+  { rel: "shortcut icon", href: "/favicon.ico" },
+  {
+    rel: "apple-touch-icon",
+    sizes: "180x180",
+    href: "/apple-touch-icon.png",
+  },
+  { rel: "manifest", href: "/site.webmanifest" },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
