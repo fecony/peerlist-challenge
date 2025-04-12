@@ -3,7 +3,6 @@ import { useState } from "react";
 import { GooeyFilter } from "~/components/gooey";
 import { MenuButton } from "~/components/menuButton";
 import { MenuDropdown } from "~/components/menu-items";
-import { BackHomeButton } from "~/components/back-home-button";
 
 export function meta({}: Route.MetaArgs) {
   return [{ title: "Peerlist challenges | Day 1" }];

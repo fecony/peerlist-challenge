@@ -1,5 +1,3 @@
-import { Github } from "lucide-react";
-
 export const GitHub = () => (
   <a
     href="http://github.com/fecony/peerlist-challenge"

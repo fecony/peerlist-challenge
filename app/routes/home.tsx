@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import type { Route } from "./+types/home";
-import { ExternalLink, Link2 } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 export function meta({}: Route.MetaArgs) {
   return [
