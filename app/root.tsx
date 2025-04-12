@@ -9,6 +9,8 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import { GitHub } from "~/components/github";
+import { BackHomeButton } from "~/components/back-home-button";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.bunny.net" },
@@ -28,6 +30,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="h-screen p-10 flex items-center justify-center">
           {children}
         </div>
+
+        <div className="flex items-center justify-center space-x-2 absolute right-5 top-5">
+          <BackHomeButton />
+          <GitHub />
+        </div>
+
         <ScrollRestoration />
         <Scripts />
       </body>

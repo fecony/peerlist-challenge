@@ -1,4 +1,3 @@
-// SVG definition for the gooey filter
 export const GooeyFilter = () => {
   return (
     <svg className="hidden">
