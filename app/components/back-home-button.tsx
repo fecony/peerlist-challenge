@@ -9,7 +9,7 @@ export const BackHomeButton = () => {
     <Link
       to="/"
       aria-label="Go back home"
-      className="w-5 flex justify-center items-center text-lg hover:bg-gray-100"
+      className="w-5 flex justify-center items-center text-lg hover:bg-gray-100 dark:hover:bg-gray-800"
     >
       /
     </Link>

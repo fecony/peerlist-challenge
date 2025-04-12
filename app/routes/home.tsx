@@ -19,7 +19,7 @@ const days = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white flex flex-col items-center justify-center px-4 space-y-8">
+    <div className="min-h-screen text-gray-900 dark:text-white flex flex-col items-center justify-center px-4 space-y-8">
       <h1 className="text-4xl font-bold text-center">
         Peerlist UI Animation Challenge
       </h1>
@@ -38,7 +38,7 @@ export default function Home() {
           <Link
             key={day.path}
             to={day.path}
-            className="hover:bg-gray-50 rounded-lg p-6 text-center transition-colors duration-300"
+            className="hover:bg-gray-50 dark:hover:bg-gray-900 rounded-lg p-6 text-center transition-colors duration-300"
           >
             <span className="text-2xl font-semibold">{day.label}</span>
           </Link>

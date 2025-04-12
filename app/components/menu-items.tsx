@@ -16,10 +16,9 @@ export const MenuDropdown = ({ isOpen }: { isOpen: boolean }) => {
           initial="closed"
           animate="open"
           exit="closed"
-          style={{ filter: "url(#gooey)" }}
           role="menu"
           aria-label="Expanded menu items"
-          className="absolute"
+          className="absolute filter-[url(#gooey)]"
         >
           {menuItems.map((item, index) => (
             <motion.li

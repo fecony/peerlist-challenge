@@ -1,7 +1,7 @@
 import type { Route } from "./+types/one";
 import { useState } from "react";
 import { GooeyFilter } from "~/components/gooey";
-import { MenuButton } from "~/components/menuButton";
+import { MenuButton } from "~/components/menu-button";
 import { MenuDropdown } from "~/components/menu-items";
 
 export function meta({}: Route.MetaArgs) {
