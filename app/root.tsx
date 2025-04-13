@@ -6,11 +6,9 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
-
 import type { Route } from "./+types/root";
+import { ThemeProvider } from "~/providers/theme-provider";
 import "./app.css";
-import { GitHub } from "~/components/github";
-import { BackHomeButton } from "~/components/back-home-button";
 
 export const meta = ({}: Route.MetaArgs) => [
   {
@@ -49,14 +47,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        <div className="h-screen p-10 flex items-center justify-center">
+        <main className="mx-auto h-screen flex flex-col items-center justify-center max-w-screen-sm overflow-x-hidden px-6 py-24 md:overflow-x-visible ">
           {children}
-        </div>
-
-        <div className="flex items-center justify-center space-x-2 absolute right-5 top-5">
-          <BackHomeButton />
-          <GitHub />
-        </div>
+        </main>
 
         <ScrollRestoration />
         <Scripts />
@@ -66,7 +59,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <ThemeProvider>
+      <Outlet />
+    </ThemeProvider>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {

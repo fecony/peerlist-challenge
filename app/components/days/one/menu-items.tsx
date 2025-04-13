@@ -40,7 +40,7 @@ export const MenuDropdown = ({ isOpen }: { isOpen: boolean }) => {
                 href={item.href}
                 role="menuitem"
                 aria-label={item.label}
-                className="flex items-center transition-colors justify-center w-14 h-14 bg-gray-200 dark:bg-gray-800 dark:hover:text-gray-200  hover:text-black text-[#909090] rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                className="flex items-center transition justify-center w-14 h-14 bg-gray-200 dark:bg-zinc-800 dark:hover:text-zinc-200  hover:text-black text-[#909090] rounded-full focus:outline-none focus:ring-2 focus:ring-indigo-500"
               >
                 {item.icon}
               </a>
