@@ -1,7 +1,13 @@
 import {
   CircleCheck,
   CircleDashed,
+  CircleEllipsis,
   CircleFadingArrowUp,
+  Clock,
+  Cloud,
+  Egg,
+  EggFried,
+  PauseCircle,
   type LucideProps,
 } from "lucide-react";
 import { Link } from "react-router";
@@ -12,7 +18,7 @@ type CollectionProps = {
   title: string;
 };
 
-type Status = "done" | "pending" | "idle";
+type Status = "done" | "pending" | "idle" | "waiting";
 
 type Day = {
   label: string;
@@ -27,6 +33,7 @@ const statusColorMap: Record<Status, string> = {
   done: "text-emerald-500 dark:text-emerald-400",
   pending: "text-amber-400 dark:text-amber-300",
   idle: "text-zinc-500 dark:text-zinc-300",
+  waiting: "text-blue-600 dark:text-blue-300",
 };
 
 const days: Day[] = [
@@ -43,10 +50,10 @@ const days: Day[] = [
     icon: CircleCheck,
   },
   {
-    label: "Day 3",
+    label: "Day 3 – (Waiting)",
     path: "/day-3",
-    status: "idle",
-    icon: CircleDashed,
+    status: "waiting",
+    icon: Clock,
   },
   {
     label: "Day 4",
