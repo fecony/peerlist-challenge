@@ -16,14 +16,15 @@ export const AppThemeSwitcher = () => {
   ];
 
   return (
-    <span className="flex w-fit items-center gap-0.5 overflow-hidden rounded-[6px] bg-stone-100 dark:bg-zinc-900 p-[2px]">
+    <span className="flex w-fit items-center gap-0.5 overflow-hidden rounded-[6px] bg-stone-100 dark:bg-zinc-800 p-[2px]">
       {buttons.map(({ label, icon, active }) => (
         <button
           type="button"
           key={label}
+          aria-label={`${label} theme`}
           onClick={() => setTheme(label as Theme)}
           className={cn(
-            "ransition-all dark:text-zinc-600 flex h-6 w-6 items-center justify-center rounded-[4px] hover:opacity-50 cursor-pointer",
+            "ransition-all dark:text-zinc-300 flex h-6 w-6 items-center justify-center rounded-[4px] hover:opacity-50 dark:hover:bg-zinc-700 cursor-pointer",
             active ? "bg-gray-200 dark:bg-zinc-800 dark:text-zinc-100" : ""
           )}
         >

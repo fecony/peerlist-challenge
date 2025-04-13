@@ -11,15 +11,18 @@ import { ThemeProvider } from "~/providers/theme-provider";
 import "./app.css";
 
 export const meta = ({}: Route.MetaArgs) => [
+  { title: "Peerlist UI Animation Challenge by Fecony" },
+  ,
   {
     name: "apple-mobile-web-app-title",
-    content: "Fecony UI Animation Challenge",
+    content: "Peerlist UI Animation Challenge by Fecony",
   },
 ];
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.bunny.net" },
   { rel: "stylesheet", href: "https://fonts.bunny.net/css" },
+  { rel: "preconnect", href: "https://unavatar.io" },
 
   {
     rel: "icon",

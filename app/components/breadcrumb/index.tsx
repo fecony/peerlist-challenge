@@ -19,11 +19,11 @@ export const Breadcrumb = () => {
         "mt-0 mb-4 flex w-full items-center gap-1 align-middle font-normal text-xs"
       )}
     >
-      <Link className="text-zinc-400 dark:text-zinc-600" to="/">
+      <Link className="text-zinc-500 dark:text-zinc-300" to="/">
         Home
       </Link>
 
-      <ChevronRight size={12} className="text-zinc-400 dark:text-zinc-600" />
+      <ChevronRight size={12} className="text-zinc-500 dark:text-zinc-300" />
 
       {paths.map((path, index) => {
         const href = `/${paths
@@ -36,9 +36,9 @@ export const Breadcrumb = () => {
         return (
           <React.Fragment key={path}>
             {isLast ? (
-              <span className="text-zinc-400 dark:text-zinc-600">{path}</span>
+              <span className="text-zinc-500 dark:text-zinc-300">{path}</span>
             ) : (
-              <Link className="text-zinc-400 dark:text-zinc-600" to={href}>
+              <Link className="text-zinc-500 dark:text-zinc-300" to={href}>
                 {path}
               </Link>
             )}
@@ -46,7 +46,7 @@ export const Breadcrumb = () => {
             {index < paths.length - 1 && (
               <ChevronRight
                 size={12}
-                className="text-zinc-400 dark:text-zinc-600"
+                className="text-zinc-500 dark:text-zinc-300"
               />
             )}
           </React.Fragment>

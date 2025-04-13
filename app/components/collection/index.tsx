@@ -26,7 +26,7 @@ type Day = {
 const statusColorMap: Record<Status, string> = {
   done: "text-emerald-500 dark:text-emerald-400",
   pending: "text-amber-400 dark:text-amber-300",
-  idle: "text-zinc-400 dark:text-zinc-500",
+  idle: "text-zinc-500 dark:text-zinc-300",
 };
 
 const days: Day[] = [
@@ -66,7 +66,7 @@ export const Collection = ({ title }: CollectionProps) => {
   return (
     <div className="mt-6 flex flex-col">
       <Link to={`/${title}`} className="flex justify-between" viewTransition>
-        <h2 className="py-2 text-zinc-400 capitalize font-medium">{title}</h2>
+        <h2 className="py-2 text-zinc-500 capitalize font-medium">{title}</h2>
       </Link>
 
       {days.map((day) => {
