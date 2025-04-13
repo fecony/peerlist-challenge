@@ -39,8 +39,8 @@ const days: Day[] = [
   {
     label: "Day 2 – (Dynamaic Status Indicator)",
     path: "/day-2",
-    status: "pending",
-    icon: CircleFadingArrowUp,
+    status: "done",
+    icon: CircleCheck,
   },
   {
     label: "Day 3",
