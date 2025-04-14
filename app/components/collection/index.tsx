@@ -47,8 +47,8 @@ const days: Day[] = [
   {
     label: "Day 3 – (Animated Checkboxes)",
     path: "/day-3",
-    status: "pending",
-    icon: CircleFadingArrowUp,
+    status: "done",
+    icon: CircleCheck,
   },
   {
     label: "Day 4 – (Waiting)",
