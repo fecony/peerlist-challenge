@@ -1,13 +1,8 @@
 import {
   CircleCheck,
   CircleDashed,
-  CircleEllipsis,
   CircleFadingArrowUp,
   Clock,
-  Cloud,
-  Egg,
-  EggFried,
-  PauseCircle,
   type LucideProps,
 } from "lucide-react";
 import { Link } from "react-router";
@@ -50,16 +45,16 @@ const days: Day[] = [
     icon: CircleCheck,
   },
   {
-    label: "Day 3 – (Waiting)",
+    label: "Day 3 – (Animated Checkboxes)",
     path: "/day-3",
-    status: "waiting",
-    icon: Clock,
+    status: "pending",
+    icon: CircleFadingArrowUp,
   },
   {
-    label: "Day 4",
+    label: "Day 4 – (Waiting)",
     path: "/day-4",
-    status: "idle",
-    icon: CircleDashed,
+    status: "waiting",
+    icon: Clock,
   },
   {
     label: "Day 5",

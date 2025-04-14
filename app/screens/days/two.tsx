@@ -28,7 +28,7 @@ export default function Two() {
   const deployKey = useCyclingStatus(deploymentStatuses);
 
   return (
-    <div className="grid w-full grid-cols-2 gap-6 p-8">
+    <div className="grid w-full grid-cols-1 sm:grid-cols-2 gap-6 p-8">
       <StatusBadge statuses={defaultStatuses} status={transactionKey} />
       <StatusBadge statuses={deploymentStatuses} status={deployKey} />
       <StatusBadge statuses={batteryStatuses} status={batteryKey} />
