@@ -25,7 +25,8 @@ export const AppThemeSwitcher = () => {
           onClick={() => setTheme(label as Theme)}
           className={cn(
             "ransition-all dark:text-zinc-300 flex h-6 w-6 items-center justify-center rounded-[4px] hover:opacity-50 dark:hover:bg-zinc-700 cursor-pointer",
-            active ? "bg-gray-200 dark:bg-zinc-800 dark:text-zinc-100" : ""
+            active ? "bg-gray-200 dark:bg-zinc-800 dark:text-zinc-100" : "",
+            "focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-500"
           )}
         >
           {icon}

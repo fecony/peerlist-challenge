@@ -1,9 +1,12 @@
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Outlet } from "react-router";
 import { Breadcrumb } from "~/components/breadcrumb";
+import { DayNavigation } from "~/components/days/navigation";
 import { Footer } from "~/components/footer";
 import { Me } from "~/components/me";
 import * as FadeIn from "~/components/motion";
 import { Spacer } from "~/components/spacer";
+import { cn } from "~/lib/cn";
 
 export default function Layout() {
   return (
@@ -15,7 +18,11 @@ export default function Layout() {
       <Spacer />
 
       <FadeIn.Item>
-        <Breadcrumb />
+        <div className="flex space-between">
+          <Breadcrumb />
+
+          <DayNavigation />
+        </div>
       </FadeIn.Item>
 
       <FadeIn.Item>

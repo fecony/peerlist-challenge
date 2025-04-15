@@ -1,68 +1,11 @@
-import {
-  CircleCheck,
-  CircleDashed,
-  CircleFadingArrowUp,
-  Clock,
-  type LucideProps,
-} from "lucide-react";
 import { Link } from "react-router";
 import { Fragment } from "react";
 import { cn } from "~/lib/cn";
+import { days, statusColorMap } from "~/lib/days";
 
 type CollectionProps = {
   title: string;
 };
-
-type Status = "done" | "pending" | "idle" | "waiting";
-
-type Day = {
-  label: string;
-  path: `/${string}`;
-  status: Status;
-  icon: React.ForwardRefExoticComponent<
-    Omit<LucideProps, "ref"> & React.RefAttributes<SVGSVGElement>
-  >;
-};
-
-const statusColorMap: Record<Status, string> = {
-  done: "text-emerald-500 dark:text-emerald-400",
-  pending: "text-amber-400 dark:text-amber-300",
-  idle: "text-zinc-500 dark:text-zinc-300",
-  waiting: "text-blue-600 dark:text-blue-300",
-};
-
-const days: Day[] = [
-  {
-    label: "Day 1 – (Fluid Menu)",
-    path: "/day-1",
-    status: "done",
-    icon: CircleCheck,
-  },
-  {
-    label: "Day 2 – (Dynamaic Status Indicator)",
-    path: "/day-2",
-    status: "done",
-    icon: CircleCheck,
-  },
-  {
-    label: "Day 3 – (Animated Checkboxes)",
-    path: "/day-3",
-    status: "done",
-    icon: CircleCheck,
-  },
-  {
-    label: "Day 4 – (Waiting)",
-    path: "/day-4",
-    status: "waiting",
-    icon: Clock,
-  },
-  {
-    label: "Day 5",
-    path: "/day-5",
-    status: "idle",
-    icon: CircleDashed,
-  },
-];
 
 export const Collection = ({ title }: CollectionProps) => {
   return (

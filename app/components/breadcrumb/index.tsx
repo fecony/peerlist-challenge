@@ -19,7 +19,13 @@ export const Breadcrumb = () => {
         "mt-0 mb-4 flex w-full items-center gap-1 align-middle font-normal text-xs"
       )}
     >
-      <Link className="text-zinc-500 dark:text-zinc-300" to="/">
+      <Link
+        className={cn(
+          "text-zinc-500 dark:text-zinc-300",
+          "focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-500 rounded-xs ring-offset-2"
+        )}
+        to="/"
+      >
         Home
       </Link>
 
@@ -38,7 +44,13 @@ export const Breadcrumb = () => {
             {isLast ? (
               <span className="text-zinc-500 dark:text-zinc-300">{path}</span>
             ) : (
-              <Link className="text-zinc-500 dark:text-zinc-300" to={href}>
+              <Link
+                className={cn(
+                  "text-zinc-500 dark:text-zinc-300",
+                  "focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-500 rounded-xs ring-offset-2"
+                )}
+                to={href}
+              >
                 {path}
               </Link>
             )}
