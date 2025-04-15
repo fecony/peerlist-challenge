@@ -1,5 +1,5 @@
-import { ChallengeState } from "~/components/challenge-state";
+import { SegmentedControl } from "~/components/days/four/segmented-control";
 
 export default function Four() {
-  return <ChallengeState state="In progress..." />;
+  return <SegmentedControl />;
 }

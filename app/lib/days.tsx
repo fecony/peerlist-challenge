@@ -46,8 +46,8 @@ export const days: Day[] = [
   {
     label: "Day 4 – (Animated Toggles)",
     path: "/day-4",
-    status: "pending",
-    icon: CircleFadingArrowUp,
+    status: "done",
+    icon: CircleCheck,
   },
   {
     label: "Day 5 – (Waiting)",
