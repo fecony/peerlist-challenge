@@ -12,7 +12,6 @@ export const DayNavigation = () => {
   const prevDay = days[currentIndex - 1];
   const nextDay = days[currentIndex + 1];
 
-  console.log({ pathname, currentIndex, prevDay, nextDay });
   const prevPath = prevDay ? `/challenges${prevDay.path}` : "";
   const nextPath = nextDay ? `/challenges${nextDay.path}` : "";
 

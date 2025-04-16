@@ -23,6 +23,7 @@ export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.bunny.net" },
   { rel: "stylesheet", href: "https://fonts.bunny.net/css" },
   { rel: "preconnect", href: "https://unavatar.io" },
+  { rel: "preconnect", href: "https://i.seadn.io" },
 
   {
     rel: "icon",

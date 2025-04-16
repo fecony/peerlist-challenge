@@ -10,6 +10,7 @@
     "deploy": "bun run build && cp build/client/index.html build/client/200.html && surge ./build/client/ peerlist-fecony-ui.surge.sh"
   },
   "dependencies": {
+    "@radix-ui/react-scroll-area": "^1.2.4",
     "@react-router/node": "^7.5.0",
     "@react-router/serve": "^7.5.0",
     "clsx": "^2.1.1",

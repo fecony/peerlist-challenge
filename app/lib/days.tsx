@@ -52,7 +52,7 @@ export const days: Day[] = [
   {
     label: "Day 5 – (Shared Layout Tabs)",
     path: "/day-5",
-    status: "pending",
-    icon: CircleFadingArrowUp,
+    status: "done",
+    icon: CircleCheck,
   },
 ];
