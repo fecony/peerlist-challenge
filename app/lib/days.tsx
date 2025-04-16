@@ -50,9 +50,9 @@ export const days: Day[] = [
     icon: CircleCheck,
   },
   {
-    label: "Day 5 – (Waiting)",
+    label: "Day 5 – (Shared Layout Tabs)",
     path: "/day-5",
-    status: "waiting",
-    icon: Clock,
+    status: "pending",
+    icon: CircleFadingArrowUp,
   },
 ];
